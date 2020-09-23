@@ -2,6 +2,7 @@
 library(psychTestR)
 library(testthat)
 
+<<<<<<< HEAD
 w_dir <- getwd()
 
 if (substr(w_dir, nchar(w_dir)-13, nchar(w_dir)) != "tests/testthat") { # if file paths ends on "EDT"
@@ -18,6 +19,13 @@ if (substr(w_dir, nchar(w_dir)-13, nchar(w_dir)) != "tests/testthat") { # if fil
 number_items <- 18 #number of items
 
 app <<- AppTester$new(dir_app)
+=======
+dir <- "C:/Users/new/Documents/longGold/Projects/EDT/R/edt"
+
+number_items <- 18 #number of items
+
+app <<- AppTester$new(dir)
+>>>>>>> de927f02e5793a7690903565fe6d8d9a6f9f0634
 
 # ID
 app$expect_ui_text("Please enter your ID. Continue")

@@ -5,10 +5,10 @@ library(testthat)
 w_dir <- getwd()
 
 if (substr(w_dir, nchar(w_dir)-13, nchar(w_dir)) != "tests/testthat") { # if file paths ends on "EDT"
-  dir_app <- "R/edt"
-} else if (substr(w_dir, nchar(w_dir)-13, nchar(w_dir)) != "testthat") { # if file paths ends on "testthat"
-  print(getwd())
-  dir_app <- paste0(strtrim(w_dir, nchar(w_dir)-14), "R/edt")
+  dir_app <- "tests/testthat/apps"
+} else if ( substr(w_dir, nchar(w_dir)-13, nchar(w_dir)) == "testthat") { # if file paths ends on "testthat"
+  # print(getwd())
+  dir_app <- paste0(strtrim(w_dir, nchar(w_dir)-14), "apps")
 }
 
 number_items <- 18 #number of items

@@ -41,9 +41,8 @@ if (TRUE) {
   # export Results
   results <- app$get_results() %>% as.list()
   # EDT_ability_sem <<- results[["EDT"]][["ability_sem"]]
-  EDT_ability <<- results[["EDT"]][["score"]]
+  EDT_score <<- results[["EDT"]][["score"]]
 
-  print(paste("Standard error of measurement of EDT", EDT_ability_sem))
 }
 
 app$stop()
